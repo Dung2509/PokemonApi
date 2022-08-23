@@ -44,13 +44,13 @@ export default function Stats(props) {
   }, []);
 
   return (
-    <ScrollView style={{height: height + 10}}>
+    <ScrollView style={{height: height + 300}}>
       <Text
         style={{
           color: pokemonTypeColors[item.type],
           fontSize: 20,
           fontWeight: 'bold',
-          marginLeft: 40,
+          marginLeft: 20,
           marginBottom: 10,
         }}>
         Base Stats
@@ -79,7 +79,7 @@ export default function Stats(props) {
         );
       })}
 
-      <Text style={{marginLeft: 40, width: width - 60}}>
+      <Text style={{marginLeft: 20, width: width - 60}}>
         The ranges shown on the right are for a level 100 Pokémon. Maximum
         values are based on a beneficial nature, 252 EVs, 31 IVs; minimum values
         are based on a hindering nature, 0 EVs, 0 IVs.
@@ -89,17 +89,17 @@ export default function Stats(props) {
           color: pokemonTypeColors[item.type],
           fontSize: 20,
           fontWeight: 'bold',
-          marginLeft: 40,
+          marginLeft: 20,
           marginVertical: 10,
         }}>
         Type Defenses
       </Text>
-      <Text style={{marginLeft: 40}}>
+      <Text style={{marginLeft: 20}}>
         The effectiveness of each type on {item.name}.
       </Text>
      
-        <Text style={{marginLeft:40,fontSize:17,color:pokemonColors[item.type],fontWeight:'bold'}}>Weak vs.</Text>
-        <View style={{flexDirection:'row',marginLeft:40}}>
+        <Text style={{marginLeft:20,fontSize:17,color:pokemonColors[item.type],fontWeight:'bold'}}>Weak vs.</Text>
+        <View style={{flexDirection:'row',marginLeft:20}}>
         <Text style={{alignSelf:'center',fontSize:15}}>Double Damage From :  </Text> 
         {baseStats.map((data, index) => (                     
             <View style={{ backgroundColor:pokemonTypeColors[data.ddt],justifyContent:'center',margin:5}}>
@@ -109,7 +109,7 @@ export default function Stats(props) {
         ))}    
         </View>
 
-        <View style={{flexDirection:'row',marginLeft:40}}>
+        <View style={{flexDirection:'row',marginLeft:20}}>
         <Text style={{alignSelf:'center'}}>Half Damage To :  </Text> 
         {baseStats.map((data, index) => (                     
             <View style={{ backgroundColor:pokemonTypeColors[data.hdf],justifyContent:'center',margin:5}}>
@@ -119,8 +119,8 @@ export default function Stats(props) {
         ))}    
         </View>
 
-        <Text style={{marginLeft:40,fontSize:17,color:pokemonColors[item.type],fontWeight:'bold'}}>Strong vs.</Text>
-        <View style={{flexDirection:'row',marginLeft:40}}>
+        <Text style={{marginLeft:20,fontSize:17,color:pokemonColors[item.type],fontWeight:'bold'}}>Strong vs.</Text>
+        <View style={{flexDirection:'row',marginLeft:20}}>
         <Text style={{alignSelf:'center',fontSize:15}}>Double Damage To :  </Text> 
         {baseStats.map((data, index) => (                     
             <View style={{ backgroundColor:pokemonTypeColors[data.ddf],justifyContent:'center',margin:5}}>
@@ -130,7 +130,7 @@ export default function Stats(props) {
         ))}    
         </View>
 
-        <View style={{flexDirection:'row',marginLeft:40}}>
+        <View style={{flexDirection:'row',marginLeft:20}}>
         <Text style={{alignSelf:'center',fontSize:15}}>Half Damage From :  </Text> 
         {baseStats.map((data, index) => (                     
             <View style={{ backgroundColor:pokemonTypeColors[data.hdt],justifyContent:'center',margin:5}}>

@@ -33,10 +33,10 @@ export default function About(props) {
   }, []);
 
   return (
-    <ScrollView style={{height: height + 400}}>
+    <ScrollView style={{height: height + 600,width:Dimensions.get('screen').width }}>
       {about.map((data, index) => (
         <Text key={index}
-          style={{marginLeft: 40, width: width, fontSize: 15, marginBottom: 5}}>
+          style={{marginLeft: 20, width: width, fontSize: 15, marginBottom: 5}}>
           {data.desPokemon}
         </Text>
       ))}
@@ -45,7 +45,7 @@ export default function About(props) {
           color: pokemonTypeColors[item.type],
           fontSize: 20,
           fontWeight: 'bold',
-          marginLeft: 40,
+          marginLeft: 20,
           marginBottom: 10,
         }}>
         Pokédex Data
@@ -85,7 +85,7 @@ export default function About(props) {
           color: pokemonTypeColors[item.type],
           fontSize: 20,
           fontWeight: 'bold',
-          marginLeft: 40,
+          marginLeft: 20,
         }}>
         Training
       </Text>
@@ -115,7 +115,7 @@ export default function About(props) {
           color: pokemonTypeColors[item.type],
           fontSize: 20,
           fontWeight: 'bold',
-          marginLeft: 40,
+          marginLeft: 20,
         }}>
         Breeding
       </Text>
@@ -144,7 +144,7 @@ export default function About(props) {
           color: pokemonTypeColors[item.type],
           fontSize: 20,
           fontWeight: 'bold',
-          marginLeft: 40,
+          marginLeft: 20,
         }}>
         Location
       </Text>

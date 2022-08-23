@@ -4,6 +4,7 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#f4f4f4",
+        // height: Dimensions.get('screen').height
         // padding: 10,
     },
     content: {
@@ -59,8 +60,8 @@ export default StyleSheet.create({
         position: "absolute",
         bottom: 2,
         right: 2,
-        width: 90,
-        height: 90,
+        width: 75,
+        height: 70,
 
     },
     detail__imagePokemon: {
@@ -88,7 +89,7 @@ export default StyleSheet.create({
         paddingBottom: 10,
     },
     detail__textTab: {
-        fontSize: 15,
+        fontSize: 10,
         color: "gray",
         fontWeight: "bold"
     },
@@ -97,7 +98,7 @@ export default StyleSheet.create({
     },
     card: {
         flex: 1,
-        height: 140,
+        height: 150,
     },
     card__typeText: {
         color: "white",
@@ -139,14 +140,14 @@ export default StyleSheet.create({
         fontSize: 15,
         fontWeight: "bold",
         marginBottom: 15,
-        marginLeft: 40,
+        marginLeft: 20,
         color: "grey",
         // opacity: .7,
         width: 120,
     },
     about__text: {
         // textAlign: "center",
-        fontSize: 15,
+        fontSize: 10,
         fontWeight: "bold",
         marginBottom: 10,
         color: "grey",
@@ -156,7 +157,7 @@ export default StyleSheet.create({
         fontSize: 15,
         fontWeight: "bold",
         marginBottom: 15,
-        marginLeft: 40,
+        marginLeft: 20,
         color: "grey",
         // opacity: .7,
         width: 120,

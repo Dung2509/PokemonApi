@@ -89,7 +89,7 @@ export default function Detail({ navigation, route }) {
 
                 </View>
                 <View style={{ paddingRight: 20 }}>
-                    <Text style={{ color: "#fff", opacity: .8, fontWeight: "bold", fontSize: 25, }}>
+                    <Text style={{ color: "#fff", opacity: .8, fontWeight: "bold", fontSize: 20, }}>
                         #{`${item.id}`.padStart(3, 0)}
                     </Text>
                 </View>
@@ -99,7 +99,7 @@ export default function Detail({ navigation, route }) {
                 elevation: 5,
             }}>
                 <Image
-                    style={{width: 200, height:200}}
+                    style={{width: 150, height:150}}
                     source={{ uri: item.imgUrl }}
                 />
             </View>
